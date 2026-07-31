@@ -1,7 +1,3 @@
-@app.get("/")
-@app.head("/")
-def read_root():
-    return {"status": "online"}
 import os
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
@@ -14,7 +10,10 @@ from sqlalchemy.orm import Session
 
 from . import auth, crud, models, schemas, utils
 from .database import Base, engine, get_db
-
+@app.get("/")
+@app.head("/")
+def read_root():
+    return {"status": "online"}
 # Load environment variables
 load_dotenv()
 
