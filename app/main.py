@@ -1,3 +1,7 @@
+@app.get("/")
+@app.head("/")
+def read_root():
+    return {"status": "online"}
 import os
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
