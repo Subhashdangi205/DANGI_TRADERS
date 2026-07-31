@@ -10,10 +10,7 @@ from sqlalchemy.orm import Session
 
 from . import auth, crud, models, schemas, utils
 from .database import Base, engine, get_db
-@app.get("/")
-@app.head("/")
-def read_root():
-    return {"status": "online"}
+
 # Load environment variables
 load_dotenv()
 
@@ -22,6 +19,7 @@ ADMIN_PASSWORD = os.getenv("APP_ADMIN_PASSWORD", "dangi_password")
 
 Base.metadata.create_all(bind=engine)
 
+# Initialize FastAPI app ONCE here
 app = FastAPI(title="Dangi Traders Multi-Category ERP", version="2.0.0")
 
 # --- CORS Middleware ---
@@ -35,8 +33,9 @@ app.add_middleware(
 
 
 @app.get("/")
+@app.head("/")
 def read_root():
-    return {"message": "Dangi Traders Multi-Category ERP API is Running!"}
+    return {"status": "online", "message": "Dangi Traders Multi-Category ERP API is Running!"}
 
 
 # 1. Login Endpoint (Reads credentials dynamically from .env)
