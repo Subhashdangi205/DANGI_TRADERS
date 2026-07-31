@@ -1,0 +1,25 @@
+# 🚨 Sensitive Environment Variables (STRICTLY IGNORED)
+.env
+.env.local
+.env.production
+
+# 🗄️ Databases & Secrets
+*.db
+*.sqlite3
+
+# 🐍 Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 📦 Virtual Environment
+venv/
+env/
+ENV/
+
+# ⚛️ Frontend Node Modules & Build
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.vscode/
+.idea/
