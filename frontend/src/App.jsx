@@ -1,16 +1,8 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import * as Icons from "lucide-react";
 
-/* ============================================================================
-   Dangi Traders — Multi-Category ERP & Billing System
-   Categories: Khad | Khal & Pashu Aahar | Kirana Store | Jama (Payment)
-============================================================================ */
 
-<<<<<<< HEAD
 const BASE_URL = "https://dangi-traders-5ozw.onrender.com";
-=======
-const API_BASE_URL = "https://dangi-traders-5ozw.onrender.com";
->>>>>>> 4f87d311381229be1f7bba14cc21f52b12686bc9
 
 const FERTILIZER_TYPES = ["Urea", "DAP", "NPK", "SSP"];
 const COMPANIES = ["IFFCO", "KRIBHCO", "Chambal", "IPL", "NSC", "Others"];
