@@ -6,7 +6,7 @@ import * as Icons from "lucide-react";
    Categories: Khad | Khal & Pashu Aahar | Kirana Store | Jama (Payment)
 ============================================================================ */
 
-const BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://dangi-traders-5ozw.onrender.com";
 
 const FERTILIZER_TYPES = ["Urea", "DAP", "NPK", "SSP"];
 const COMPANIES = ["IFFCO", "KRIBHCO", "Chambal", "IPL", "NSC", "Others"];
